@@ -5,11 +5,11 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class CoinChange {   
+public class Lab4 {   
     int amount;
     int[] c;
     int[][] sol;
-    public CoinChange(int amount,int[] c){
+    public Lab4(int amount,int[] c){
         this.amount = amount;
         this.c = c;
         sol = new int[c.length + 1][amount + 1];
@@ -89,7 +89,7 @@ public class CoinChange {
             c[i] = Integer.parseInt(coins[i]);
         }
 
-        CoinChange cc = new CoinChange(amount,c);
+        Lab4 cc = new Lab4(amount,c);
 	    System.out.println("\nWays to make change = " + cc.dynamic(c, amount) + "\n");
         
         List<Integer> countOfCoins = new ArrayList<>(); 
