@@ -47,7 +47,7 @@ class Point {
 	}
 }
 
-public class MCT {
+public class Lab5 {
     
     static void printSolution(Point[] points, int[][] s, int i, int j) {
 		if(j - i < 2) return;
